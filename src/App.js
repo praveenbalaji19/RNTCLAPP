@@ -25,7 +25,7 @@ const Section = (props) => {
         <View style={styles.cardContainer}>
             <View style={styles.flexRow}>
                 <Image source={{ uri: props.item.avatar }} style={styles.avatar} />
-                <>
+                <View style={{ paddingLeft: 10 }}>
                     <Text
                         style={[styles.sectionTitle]}>
                         {props.item.first_name}
@@ -34,7 +34,7 @@ const Section = (props) => {
                         style={[styles.sectionDescription]}>
                         {props.item.email}
                     </Text>
-                </>
+                </View>
             </View>
         </View>
     );

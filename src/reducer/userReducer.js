@@ -11,9 +11,7 @@ export const userReducer = (state = initialState, action) => {
             }
         }
         default: {
-            return {
-                state
-            }
+            return state
         }
     }
 }
